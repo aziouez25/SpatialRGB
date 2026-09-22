@@ -1,0 +1,606 @@
+INFO:     Started server process [853758]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8765 (Press CTRL+C to quit)
+INFO:     127.0.0.1:36266 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36272 - "WebSocket /websocket/" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:43592 - "WebSocket /websocket/" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:43600 - "WebSocket /websocket/" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:43604 - "WebSocket /websocket/" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:43620 - "WebSocket /websocket/" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:44152 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_b?nonce=905a8adcb9cde2eb&query=TRAC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44152 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_b?nonce=905a8adcb9cde2eb&query=TRA&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44152 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_b?nonce=905a8adcb9cde2eb&query=TR&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44152 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_b?nonce=905a8adcb9cde2eb&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42484 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_b?nonce=905a8adcb9cde2eb&query=T&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32986 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_b?nonce=905a8adcb9cde2eb&query=TRB&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32986 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_b?nonce=905a8adcb9cde2eb&query=TRBC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40964 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_r?nonce=1f7824fb83d3d834&query=TRA&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40964 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_r?nonce=1f7824fb83d3d834&query=TRAC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40964 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_r?nonce=1f7824fb83d3d834&query=TR&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40964 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_r?nonce=1f7824fb83d3d834&query=T&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40964 - "GET /session/a4b322ef8dbfbf070baccf17ddc58fe41275cb43824c4e8c0f36ab60813cb35e/dynamic_route/update_selectize_sel_r?nonce=1f7824fb83d3d834&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33102 - "WebSocket /websocket/" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60446 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60452 - "WebSocket /websocket/" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60446 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_r?nonce=3183d11c0e0b2a9e&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60450 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_g?nonce=4f5e50a9bfba8c06&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60456 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_b?nonce=980e61e629c0c431&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60456 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_r?nonce=3183d11c0e0b2a9e&query=TRA&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60456 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_r?nonce=3183d11c0e0b2a9e&query=TRAC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59438 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_g?nonce=4f5e50a9bfba8c06&query=NP&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59438 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_g?nonce=4f5e50a9bfba8c06&query=NPHS&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59438 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_g?nonce=4f5e50a9bfba8c06&query=NPHS2&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59438 - "GET /lib/shiny-busy-indicators-1.8.0/spinners/ring.svg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:38630 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_b?nonce=980e61e629c0c431&query=LY&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38630 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_b?nonce=980e61e629c0c431&query=LYZ&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:59326 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_r?nonce=273ded1a27c77306&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59336 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_g?nonce=785359040ddc8271&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59338 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_b?nonce=5fffed420ecbdde5&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+INFO:     127.0.0.1:57202 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_g?nonce=785359040ddc8271&query=stat&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:48120 - "GET /lib/shiny-busy-indicators-1.8.0/spinners/ring.svg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:48120 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_r?nonce=a5a94818783bb3af&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48132 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_g?nonce=760561e1b7b060ce&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48146 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_b?nonce=bd1fc554c9a1608e&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:59964 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_r?nonce=34dc9e3c4b38a9fd&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59974 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_g?nonce=6a48f3cb132ef641&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59988 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_b?nonce=01cb27de60b0934c&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42774 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_r?nonce=34dc9e3c4b38a9fd&query=Stat&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37924 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_g?nonce=6a48f3cb132ef641&query=PO&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37924 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_g?nonce=6a48f3cb132ef641&query=POD&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37924 - "GET /session/57a8ee2ea83006f70f0a98608d1519cad558343b510ac370bfaf4cdfe265d228/dynamic_route/update_selectize_sel_g?nonce=6a48f3cb132ef641&query=PODXL&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51414 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51414 - "GET /lib/selectize-0.12.6/js/selectize.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51430 - "GET /lib/selectize-0.12.6/accessibility/js/selectize-plugin-a11y.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51432 - "GET /lib/htmltools-fill-0.5.9.9000/fill.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51474 - "GET /lib/bootstrap-5.3.8/bootstrap.min.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51444 - "GET /lib/ionrangeslider-2.3.1/js/ion.rangeSlider.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51458 - "GET /lib/bootstrap-5.3.8/bootstrap.bundle.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51414 - "GET /lib/shiny-busy-indicators-1.8.0/busy-indicators.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51430 - "GET /lib/bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51444 - "GET /lib/shiny-1.8.0/shiny.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51474 - "GET /lib/strftime-0.9.2/strftime-min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51432 - "GET /lib/bslib-components-0.12.0.9000/components.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51458 - "GET /lib/bslib-components-0.12.0.9000/web-components.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51414 - "GET /lib/requirejs-2.3.6/require.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51430 - "GET /lib/jquery-3.6.0/jquery-3.6.0.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51430 - "GET /lib/bootstrap-5.3.8/font.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51430 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51414 - "GET /lib/shiny-busy-indicators-1.8.0/spinners/ring.svg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51482 - "WebSocket /websocket/" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51414 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=bb72e4ca65a17c72&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51430 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=1af05a52c49b2814&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51474 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=68059c138bed88d9&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51474 - "GET /lib/bootstrap-5.3.8/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:44302 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=bb72e4ca65a17c72&query=STAT1&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44314 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:44314 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59100 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=bb72e4ca65a17c72&query=NP&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59100 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=bb72e4ca65a17c72&query=NPHS&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41350 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=1af05a52c49b2814&query=SOST&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33424 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=68059c138bed88d9&query=P&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33424 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=68059c138bed88d9&query=PHTF&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60336 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=bb72e4ca65a17c72&query=TRAC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:57012 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=8431e218a3d18ab6&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57016 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=fddb3a264d708864&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57022 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=395d0bfbcf16782a&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+INFO:     127.0.0.1:51626 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=8431e218a3d18ab6&query=N&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51626 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=8431e218a3d18ab6&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51626 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=8431e218a3d18ab6&query=TRAC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52420 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=8431e218a3d18ab6&query=LY&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52420 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=8431e218a3d18ab6&query=LYZ&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47932 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=8431e218a3d18ab6&query=CXC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47932 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=8431e218a3d18ab6&query=CXCR&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47932 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=8431e218a3d18ab6&query=CXCL&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47932 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=8431e218a3d18ab6&query=CXCL9&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48342 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=fddb3a264d708864&query=L&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48342 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=fddb3a264d708864&query=LYZ&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57862 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=fddb3a264d708864&query=S&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57862 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=fddb3a264d708864&query=SOST&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60070 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=fddb3a264d708864&query=TRAC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53266 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=fddb3a264d708864&query=NPHS&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53266 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=fddb3a264d708864&query=NPHS2&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44512 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=33ad926660a6e857&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44514 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=7c2e060314f570f2&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44530 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=4fc8a5ff5aa6735a&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:34970 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=e65c368f67175465&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34974 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=bce0af67c2657054&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34978 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=22fc28f8b69b2c30&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58068 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=22fc28f8b69b2c30&query=L&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58068 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=22fc28f8b69b2c30&query=LY&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58068 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=22fc28f8b69b2c30&query=LYZ&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46924 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=5f3533cf24cb3f21&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46940 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=54087bf9aa9cd13e&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46942 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=4570ba894aa9b189&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:42624 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=4570ba894aa9b189&query=TRAC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59368 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=4570ba894aa9b189&query=CD&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59368 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=4570ba894aa9b189&query=CD3&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45192 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=4570ba894aa9b189&query=CD3D&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54110 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=062241ff6eb0ff21&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54116 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=dc014b9e1a85ba20&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54126 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=d57b1ef89d951ad9&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:40736 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=062241ff6eb0ff21&query=CXC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40736 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=062241ff6eb0ff21&query=CXCl&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40736 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=062241ff6eb0ff21&query=CXCl10&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40736 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=062241ff6eb0ff21&query=CXCL&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40736 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=062241ff6eb0ff21&query=CXCL11&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:41752 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=085c0664dc5828eb&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41766 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=921493e9cc24d7f6&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41780 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=82a43a4e99d1284d&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+INFO:     127.0.0.1:35578 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_r?nonce=ebdc8236e71803fe&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35580 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_g?nonce=8020020b4d37b7ab&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35592 - "GET /session/f6306811c90e55301378b63bedc137efbac41e4f5a760fdd39282c56b2bb5bbf/dynamic_route/update_selectize_sel_b?nonce=f208475509f1ec1e&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:60394 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60394 - "GET /lib/bootstrap-5.3.8/bootstrap.min.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60404 - "GET /lib/ionrangeslider-2.3.1/js/ion.rangeSlider.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60394 - "GET /lib/htmltools-fill-0.5.9.9000/fill.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60440 - "GET /lib/shiny-busy-indicators-1.8.0/busy-indicators.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60404 - "GET /lib/requirejs-2.3.6/require.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60430 - "GET /lib/selectize-0.12.6/accessibility/js/selectize-plugin-a11y.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60416 - "GET /lib/bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60444 - "GET /lib/selectize-0.12.6/js/selectize.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60394 - "GET /lib/bootstrap-5.3.8/bootstrap.bundle.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60440 - "GET /lib/strftime-0.9.2/strftime-min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60430 - "GET /lib/jquery-3.6.0/jquery-3.6.0.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60394 - "GET /lib/bslib-components-0.12.0.9000/web-components.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60404 - "GET /lib/shiny-1.8.0/shiny.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60416 - "GET /lib/bslib-components-0.12.0.9000/components.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60430 - "GET /lib/bootstrap-5.3.8/font.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60430 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60430 - "GET /lib/shiny-busy-indicators-1.8.0/spinners/ring.svg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60460 - "WebSocket /websocket/" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60430 - "GET /session/f8bec140cbf02b6074ad97a2a3e745dd5259694af71d883f5d5de4023bc987b7/dynamic_route/update_selectize_sel_r?nonce=9d6b5458a1e7a5a3&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60416 - "GET /session/f8bec140cbf02b6074ad97a2a3e745dd5259694af71d883f5d5de4023bc987b7/dynamic_route/update_selectize_sel_g?nonce=37dc2df3e4cc0da7&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60404 - "GET /session/f8bec140cbf02b6074ad97a2a3e745dd5259694af71d883f5d5de4023bc987b7/dynamic_route/update_selectize_sel_b?nonce=2c77c33f0d687ba6&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60430 - "GET /lib/bootstrap-5.3.8/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60430 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60470 - "WebSocket /websocket/" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60430 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=475e480918598ca9&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60404 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=00ab66114df01fd7&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60416 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=767d25df891cf307&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34800 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=1dcf9edda4e8ba83&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34814 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=882c3aeafd4fa673&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34830 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=3326507c7c1579db&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34840 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=1dcf9edda4e8ba83&query=NPHS&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34840 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=1dcf9edda4e8ba83&query=NPHS2&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34840 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:34840 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:46166 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=882c3aeafd4fa673&query=CXC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46166 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=882c3aeafd4fa673&query=CXCL&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46166 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=882c3aeafd4fa673&query=CXCL9&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46166 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=882c3aeafd4fa673&query=CXCL10&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59476 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=3326507c7c1579db&query=TRAC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51596 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=929184937fb0809b&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51598 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=b365f7ca81081a6f&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51600 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=297c77359b541c7a&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:55810 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=7f5e89b4fb6aca9e&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55824 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=26710a20e423a85b&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55832 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=7b52a92853969ae2&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:55842 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=959b59d2e89f10d7&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55850 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=6d67b51f708e353f&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55860 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=57863e0746e91ffc&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:35728 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=7bb1ed91e8a9d218&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35742 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=b67afac41646f284&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35756 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=0a431e25f93b31b8&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+INFO:     127.0.0.1:48986 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=e2791f64cdba54c1&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49000 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=86e3f8ee78d03f3e&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49008 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=6bf98634f54ff128&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:50996 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=d6a01edcb84a0447&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51000 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=948317d854e1657d&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51014 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=93bf681dd9f685e6&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:34720 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=a71ab662f951407d&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34724 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=28cb05c00d085b89&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34736 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=defef4e4752f30db&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:56646 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=e707bbc70276eedc&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56660 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=27899a1b23b73a58&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56674 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=dac7e3e517fefe4c&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:49942 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=2be5cfdbe4bb9fc9&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49956 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=69b588192c560774&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49970 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=50b2468a08eb2545&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+INFO:     127.0.0.1:44726 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=7f3bc6a290d202c0&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44736 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=4b55dc8fe74e9e0b&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44742 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=9154fa8c21ddc247&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:44742 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=81494d09858ff61a&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44726 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=74c157a695c51d58&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44736 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=198b26ec8043721a&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34964 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=a8fe13b68131f6b1&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34968 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=40e45d1600a249b1&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34970 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=1cca20a30ea35d39&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:49826 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=f3bb3851ee26f21b&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49830 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=34f703bcd4a0098d&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49844 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=d7f0dc0eb010b16f&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+INFO:     127.0.0.1:59642 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=38191004fe30b8f9&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59650 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=9ce8058e744f92f2&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59660 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=bfe689e6d77cf9c9&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:59648 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=0c24e322d0e991a9&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59664 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=96484246240de5ed&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59672 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=e9d5bb86c3168e5a&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:56574 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=026354f34c53193e&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56578 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=9b3988e591fd504d&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56586 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=5827b13fe2c1920d&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:50842 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=60618232fe281963&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50848 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=dfe0f19a923dce85&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50854 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=66be1824645aaab1&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:48066 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=0f6942ed671989d7&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48074 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=df24199be89fc0ff&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48086 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=ccd53d54f1a21135&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50008 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=c554e9ef5bb29061&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50010 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=e067c399546906c7&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50016 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=32a6539de64feebf&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:34756 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=89169cb567667c45&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34758 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=3c1ff7a28dcf0004&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34760 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=52f3f5e54d71bf99&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:37046 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=adc946bbbc6dbf57&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37056 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=a8d176b3fde5e3a7&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37064 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=41c4f6b5ae066506&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45734 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=42ac55b9e88d095d&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45744 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=e5b881cb5f174f40&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45760 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=1c9e8ad08515d1b7&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:39294 - "GET /lib/shiny-busy-indicators-1.8.0/spinners/ring.svg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:39294 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=9c11aa86c4a31171&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39306 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=346f1073186b26ea&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39320 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=7ca4da3774b96a42&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48990 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=346f1073186b26ea&query=c&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48990 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=346f1073186b26ea&query=cxc&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48990 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=346f1073186b26ea&query=cxcl&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48990 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=346f1073186b26ea&query=cxcl11&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52962 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=9bbc31b8f0be3db8&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52972 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=0face83fd948b469&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52976 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=1ec27b339fbe75a9&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:39934 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=fa9ae54db486d381&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39946 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=93ec1e99de52341c&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39952 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=6f19390be69e244f&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:59900 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=6dc6d17669701e27&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59902 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=f74a75f19f3eadb3&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59910 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=c32ce62266509be4&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+INFO:     127.0.0.1:53412 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=c48400a1b00ef687&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53416 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=4eee1ddb0113b4d1&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53426 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=ef159aa81f5ddb20&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:42760 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=c90d5be0942cbb90&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42774 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=0b6bf5d88042760f&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42790 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=be881279e58193ff&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:42792 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=5a1f7e15e95ab847&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42804 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=fefd6891b5a8381f&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42808 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=85dda4c337c9ed4f&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:48868 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=a184733e5e0e937e&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48874 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=deb1537ff8ffa6cc&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48888 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=b0c431e54af1e581&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:48888 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=fa360d19e5e7d09d&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48874 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=548be57930f23ddb&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48868 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=36c7a1359b5ba0d6&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:56818 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=c41b883a81c3cd6a&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56830 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=3569d4693f80993b&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56840 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=ac78fe74e96b4383&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45482 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_r?nonce=e8f1d0690c6b286b&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45492 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_g?nonce=2c6a290af45a60a3&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45496 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0397fdffde0a810d8a2f8968a1b/dynamic_route/update_selectize_sel_b?nonce=126a198d3ed54d53&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
