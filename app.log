@@ -628,3 +628,46 @@ INFO:     127.0.0.1:49992 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d
 INFO:     127.0.0.1:49994 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_r?nonce=9173a60bdfcc8083&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
 INFO:     127.0.0.1:50010 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
 INFO:     127.0.0.1:49988 - "GET /lib/bootstrap-5.3.8/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:33670 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_r?nonce=9173a60bdfcc8083&query=NPHS&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33670 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:33670 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57610 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=CD&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57610 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=CD3E&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57610 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=CD3&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57610 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=CD3D&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46766 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=CXC&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46776 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=CXCL%3A&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46776 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=CXCL&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46776 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=CXCL9&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46776 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=C&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46776 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=CXC10&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46776 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=CXCL10&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46776 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=CXCL11&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49606 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_b?nonce=1d1a75fd48478a18&query=SOST&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49606 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_b?nonce=1d1a75fd48478a18&query=SOS&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:53646 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_r?nonce=db333880b4b6b1a6&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53662 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=bf022276e64adbf7&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53664 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_b?nonce=cb4e550ffb8c6456&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+INFO:     127.0.0.1:51878 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_r?nonce=fad0b36d398ab904&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51892 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=0aaf30108e285512&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51908 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_b?nonce=c5413a9a5bb2657e&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/app.py:332: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.imshow(rgb, extent=ext, interpolation="nearest")
+/home/abb2013/Documents/Spatial/SpatialRGB/spatial_rgb_data.py:619: RuntimeWarning: Mean of empty slice
+  pct=round(100 * float(p.mean()), 2), **lvl(v, p))
+/home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:48044 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_b?nonce=c5413a9a5bb2657e&query=NO&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48044 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_b?nonce=c5413a9a5bb2657e&query=NOTCH&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48048 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_b?nonce=c5413a9a5bb2657e&query=NOTCH3&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34774 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_b?nonce=c5413a9a5bb2657e&query=PDGFRB&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
