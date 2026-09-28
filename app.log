@@ -604,3 +604,27 @@ INFO:     127.0.0.1:45496 - "GET /session/370029eaa3ba5c1db85a73ec992b187f69c7b0
   pct=round(100 * float(p.mean()), 2), **lvl(v, p))
 /home/abb2013/Documents/spatial-venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
   ret = ret.dtype.type(ret / rcount)
+INFO:     127.0.0.1:49988 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49988 - "GET /lib/jquery-3.6.0/jquery-3.6.0.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49992 - "GET /lib/shiny-1.8.0/shiny.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49994 - "GET /lib/bootstrap-5.3.8/bootstrap.min.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50020 - "GET /lib/bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50010 - "GET /lib/bootstrap-5.3.8/bootstrap.bundle.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49988 - "GET /lib/shiny-busy-indicators-1.8.0/busy-indicators.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50022 - "GET /lib/ionrangeslider-2.3.1/js/ion.rangeSlider.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49992 - "GET /lib/htmltools-fill-0.5.9.9000/fill.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50010 - "GET /lib/selectize-0.12.6/js/selectize.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50020 - "GET /lib/selectize-0.12.6/accessibility/js/selectize-plugin-a11y.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49988 - "GET /lib/bslib-components-0.12.0.9000/components.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49992 - "GET /lib/bslib-components-0.12.0.9000/web-components.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49994 - "GET /lib/strftime-0.9.2/strftime-min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50010 - "GET /lib/requirejs-2.3.6/require.min.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50010 - "GET /lib/bootstrap-5.3.8/font.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50010 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49994 - "GET /lib/shiny-busy-indicators-1.8.0/spinners/ring.svg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50026 - "WebSocket /websocket/" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49992 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_b?nonce=1d1a75fd48478a18&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49994 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_r?nonce=9173a60bdfcc8083&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50010 - "GET /session/0cac90d0d96f9a669d74440a575b2714774e6d297700f90c7f463e8b7673185b/dynamic_route/update_selectize_sel_g?nonce=d4b8a3bc33201555&query=&field=%5B%5B%22label%22%5D%5D&value=value&conju=and&maxop=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49988 - "GET /lib/bootstrap-5.3.8/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2 HTTP/1.1" 304 Not Modified
