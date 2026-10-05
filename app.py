@@ -58,7 +58,7 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import Patch
+from matplotlib.patches import Patch, Rectangle
 
 from shiny import App, reactive, render, ui
 
@@ -110,6 +110,21 @@ app_ui = ui.page_sidebar(
             ui.input_radio_buttons("ramp", "Gradient", choices=list(D.RAMPS),
                                    selected="sqrt", inline=True)),
 
+        ui.hr(),
+        # Author, 2026-10-05: "I can't see the cell at this resolution. Can't we
+        # make more zoom?"  The panel is already as large as a square can be in
+        # that row -- what was missing is a way to REACH a small field, because
+        # the section view puts ~6,800 um into 620 px, so a 300 um drag box is
+        # 27 px on screen and cannot be placed deliberately.  This zooms the H&E
+        # about the centre of the selection without disturbing the other panels.
+        ui.input_select("he_fov", ui.tags.b("H&E zoom (field of view)"),
+                        choices={"match": "match the selection",
+                                 "1000": "1000 µm", "600": "600 µm",
+                                 "400": "400 µm", "300": "300 µm",
+                                 "200": "200 µm", "120": "120 µm",
+                                 "60": "60 µm", "30": "30 µm"},
+                        selected="match"),
+        ui.output_ui("he_note"),
         ui.hr(),
         ui.output_ui("ct_controls"),
         ui.input_action_button("reset", "Reset zoom", class_="btn-sm"),
@@ -305,6 +320,31 @@ def server(input, output, session):
     def window():
         return win_rv()
 
+    @reactive.calc
+    def he_field():
+        """(x0, y0, side) for the H&E panel: the selection, or a zoom inside it.
+
+        Centred on the selection so that zooming in does not wander off the
+        thing you picked.  With no selection it centres on the whole scan.
+        """
+        try:
+            him = he_of(input.sample())
+        except Exception:                                  # noqa: BLE001
+            return None
+        w = window()
+        if w is None:
+            side_full = max(him.width, him.height) * him.mpp
+            cx = him.width * him.mpp / 2.0
+            cy = him.height * him.mpp / 2.0
+            sel = side_full
+        else:
+            cx, cy = w[0] + w[2] / 2.0, w[1] + w[2] / 2.0
+            sel = w[2]
+        f = _opt("he_fov", "match")
+        side = sel if f == "match" else float(f)
+        side = max(min(side, sel if f == "match" else side), 5.0)
+        return (cx - side / 2.0, cy - side / 2.0, side)
+
     def keep_of(a, win):
         """Per-bin bool for what is inside the window (None = the whole array)."""
         if not win:
@@ -382,6 +422,13 @@ def server(input, output, session):
             _msg(ax, "drag a box on the left")
         else:
             draw(fig, ax, w, "selection")
+            f = he_field()
+            if f is not None and f[2] < w[2] * 0.98:
+                ax.add_patch(Rectangle((f[0], f[1]), f[2], f[2], fill=False,
+                                       ec="#FFD400", lw=1.8, ls="--"))
+                ax.text(f[0] + f[2] / 2, f[1] - w[2] * 0.012,
+                        f"H&E {f[2]:,.0f} µm", ha="center", va="bottom",
+                        color="#FFD400", fontsize=8.5)
         return fig
 
     # The H&E panel reads the SAME win_rv as the zoom panel, so the two cannot
@@ -400,13 +447,16 @@ def server(input, output, session):
         if not him.path and not him.indexed:
             return _msg(ax, f"no microscope H&E for {s}") or fig
 
+        f = he_field()
+        if f is None:
+            return _msg(ax, "H&E unavailable") or fig
+        x0, y0, side = f
         w = window()
-        if w is None:                                     # before any zoom box
-            side = max(him.width, him.height) * him.mpp
-            x0 = y0 = 0.0
+        if w is None:
             title = f"{s} — whole scan"
+        elif side < w[2] * 0.98:
+            title = f"selection, zoomed to {side:,.0f} µm"
         else:
-            x0, y0, side = w
             title = "selection — H&E"
         try:
             img, info = him.crop(x0, y0, side, HE_PX)
@@ -433,6 +483,37 @@ def server(input, output, session):
                      fontsize=9, loc="left")
         ax.set_xticks([]); ax.set_yticks([])
         return fig
+
+    # Measured: on a full-width 900 px row the square the viewer gets is ~835 px
+    # (checked through the websocket with an 1850x900 client box).  Used here so
+    # the nucleus figure is what you see, not what we cropped.
+    HE_SCREEN_PX = 835
+
+    @render.ui
+    def he_note():
+        try:
+            him = he_of(input.sample())
+            f = he_field()
+        except Exception:                                  # noqa: BLE001
+            return ui.tags.div()
+        if f is None:
+            return ui.tags.div()
+        side = f[2]
+        on_screen = side / HE_SCREEN_PX
+        nuc = NUCLEUS_UM[0] / on_screen
+        bits = [f"{side:,.0f} µm field · a {NUCLEUS_UM[0]}–{NUCLEUS_UM[1]} µm "
+                f"nucleus ≈ {nuc:.0f} px on screen"]
+        style = "color:#666"
+        if on_screen < him.mpp:
+            # Past the scan's own sampling: the picture gets bigger but carries no
+            # new detail.  Said plainly, because a soft image here would otherwise
+            # read as out-of-focus tissue or a broken crop.
+            bits.append(f"past the scan's native {him.mpp:.2f} µm/px — enlarged "
+                        f"{him.mpp / on_screen:.1f}×, so it is soft by the limit of "
+                        f"the image, not by focus")
+            style = "color:#7A4A00"
+        return ui.tags.div(*[ui.tags.div(ui.tags.small(b)) for b in bits],
+                           style=style + ";margin-top:4px")
 
     @render.ui
     def status():
