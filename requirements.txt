@@ -1,7 +1,9 @@
 # Versions the app runs with on the workstation (pip freeze, 2026-10-05).
+# pandas is not imported by the app, but pyarrow needs it for to_pandas().
 shiny==1.8.0
 h5py==3.16.0
 numpy==2.5.2
 pyarrow==25.0.1
 matplotlib==3.11.1
 pillow==12.3.0
+pandas==3.0.5
