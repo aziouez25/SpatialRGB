@@ -51,6 +51,7 @@
 # ==============================================================================
 
 import functools
+import io as _io
 import os
 import sys
 
@@ -59,6 +60,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch, Rectangle
+from PIL import Image
 
 from shiny import App, reactive, render, ui
 
@@ -125,6 +127,9 @@ app_ui = ui.page_sidebar(
                                  "60": "60 µm", "30": "30 µm"},
                         selected="match"),
         ui.output_ui("he_note"),
+        ui.download_button("dl_he", "Save this field at full resolution",
+                           class_="btn-sm"),
+        ui.output_ui("he_where"),
         ui.hr(),
         ui.output_ui("ct_controls"),
         ui.input_action_button("reset", "Reset zoom", class_="btn-sm"),
@@ -514,6 +519,63 @@ def server(input, output, session):
             style = "color:#7A4A00"
         return ui.tags.div(*[ui.tags.div(ui.tags.small(b)) for b in bits],
                            style=style + ";margin-top:4px")
+
+    @render.ui
+    def he_where():
+        """The exact window, in both frames, so it can be quoted or re-cropped."""
+        try:
+            him = he_of(input.sample())
+            f = he_field()
+        except Exception:                                  # noqa: BLE001
+            return ui.tags.div()
+        if f is None:
+            return ui.tags.div()
+        x0, y0, side = f
+        px = [int(x0 / him.mpp), int(y0 / him.mpp),
+              int((x0 + side) / him.mpp), int((y0 + side) / him.mpp)]
+        n = int(round(side / him.mpp))
+        return ui.tags.div(
+            ui.tags.div(ui.tags.small(ui.tags.b("exact location "), "(app µm, the "
+                        "frame every panel uses): ",
+                        ui.tags.code(f"x {x0:,.1f}  y {y0:,.1f}  side {side:,.1f}"))),
+            ui.tags.div(ui.tags.small("same box in ", ui.tags.code(him.sample),
+                        " fullres pixels: ", ui.tags.code(
+                            f"[{px[0]}, {px[1]}, {px[2]}, {px[3]}]"))),
+            ui.tags.div(ui.tags.small(f"full resolution here is {n} × {n} px "
+                                      f"at {him.mpp:.4f} µm/px")),
+            style="color:#666;margin-top:6px")
+
+    def _he_name():
+        """Readable microns PLUS the exact integer pixel box.
+
+        The rounded microns alone do NOT reproduce the crop -- re-cropping from
+        "x4802" when the window was x4802.4 shifts the box and changed the size
+        by a pixel in testing.  The pixel box is exact, so the file can always be
+        cut again from the TIF.
+        """
+        f = he_field()
+        him = he_of(input.sample())
+        b = [int(np.floor(f[0] / him.mpp)), int(np.floor(f[1] / him.mpp))]
+        n = int(np.ceil(f[2] / him.mpp))
+        return (f"{him.sample}_x{f[0]:.0f}_y{f[1]:.0f}_{f[2]:.0f}um"
+                f"_px{b[0]}-{b[1]}-{b[0] + n}-{b[1] + n}"
+                f"_{him.mpp:.4f}umpx.png")
+
+    @render.download(filename=_he_name)
+    def dl_he():
+        """The field at 1 pixel = 1 scan pixel, from the ORIGINAL TIF.
+
+        Not the JPEG index and not the 835 px the panel draws -- this is every
+        pixel the scanner recorded for that window, which is the most that
+        exists.  The filename carries the window and the micron scale so the
+        crop can be placed again later.
+        """
+        him = he_of(input.sample())
+        f = he_field()
+        img, info = him.crop_native(f[0], f[1], f[2])
+        buf = _io.BytesIO()
+        Image.fromarray(img).save(buf, "PNG")
+        yield buf.getvalue()
 
     @render.ui
     def status():

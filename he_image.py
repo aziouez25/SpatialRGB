@@ -303,6 +303,60 @@ class HEImage:
         info["tiles"] = n
         return np.asarray(sub.resize((w_out, h_out), Image.BILINEAR))
 
+    # ------------------------------------------------- native-resolution crop
+    def crop_native(self, x_um, y_um, side_um, max_px=6000):
+        """The window at 1 output pixel = 1 scan pixel — the most that exists.
+
+        Read from the ORIGINAL TIF, never the JPEG index, and NOT resampled, so
+        these are the scanner's own pixels.  The panel shows ~835 px whatever the
+        field; this is what the data actually holds, which for a 120 um field on
+        KTx_18 is 293 px square and no more.  Above `max_px` the request is
+        downsampled rather than refused, and the info says so -- a whole section
+        at native would be 24145 x 12507 (906 MB).
+        """
+        if not self.path:
+            raise FileNotFoundError(f"no microscope TIF for {self.sample}")
+        t0 = time.time()
+        px0, py0 = x_um / self.mpp, y_um / self.mpp
+        pside = side_um / self.mpp
+        # A SQUARE box of ceil(side) pixels from a common origin, THEN clamped.
+        # Taking floor on the origin and ceil on the far edge independently made
+        # the result 733 x 732 for a square window -- off by one in height only,
+        # which is the sort of thing that quietly breaks a later re-crop.
+        n = int(np.ceil(pside))
+        ix0, iy0 = int(np.floor(px0)), int(np.floor(py0))
+        ix1, iy1 = ix0 + n, iy0 + n
+        ix0, iy0 = max(ix0, 0), max(iy0, 0)             # clamp: non-square only
+        ix1, iy1 = min(ix1, self.width), min(iy1, self.height)   # at the edge
+        if ix1 <= ix0 or iy1 <= iy0:
+            raise ValueError("the window does not overlap the scan")
+        t = self._tiff()
+        if t.supported():
+            img = t.rows(iy0, iy1)[:, ix0:ix1]
+        else:
+            img = np.asarray(Image.open(self.path).convert("RGB").crop(
+                (ix0, iy0, ix1, iy1)))
+        native = [int(img.shape[1]), int(img.shape[0])]
+        capped = max(native) > max_px
+        if capped:                       # too big to hand over whole
+            k = max_px / max(native)
+            img = np.asarray(Image.fromarray(img).resize(
+                (max(1, int(native[0] * k)), max(1, int(native[1] * k))),
+                Image.LANCZOS))
+        inside = (ix1 - ix0) * (iy1 - iy0)
+        info = dict(
+            sample=self.sample, mpp=self.mpp,
+            window_um=[round(float(x_um), 2), round(float(y_um), 2),
+                       round(float(side_um), 2)],
+            tif_pixel_box=[ix0, iy0, ix1, iy1],
+            native_px=native, returned_px=[int(img.shape[1]), int(img.shape[0])],
+            um_per_px=round(self.mpp if not capped else
+                            side_um / max(img.shape[1], img.shape[0]), 4),
+            downsampled=bool(capped),
+            coverage=round(inside / (pside * pside), 4) if pside > 0 else 0.0,
+            source="tiff-exact", seconds=round(time.time() - t0, 2))
+        return img, info
+
     # -------------------------------------------------------- whole section
     def whole(self, out_px=620):
         """The entire scan, for the panel before any zoom box exists."""
