@@ -40,6 +40,11 @@
 #
 # Usage
 #   set a password:   ../spatial-venv/bin/python SpatialRGB/auth.py --set
+#       --set prompts, so it needs a REAL TERMINAL.  Commands issued through an
+#       agent session have no controlling tty and getpass dies at EOF before it
+#       can ask -- hence --set-stdin, which also covers systemd, Docker build
+#       args and any other unattended install.
+#   non-interactive:  printf 'pw' | ... auth.py --set-stdin --user NAME
 #   check one:        ../spatial-venv/bin/python SpatialRGB/auth.py --check
 # ==============================================================================
 
@@ -204,7 +209,17 @@ def protect(app):
 if __name__ == "__main__":
     import getpass
     import sys
-    if "--set" in sys.argv:
+    if "--set-stdin" in sys.argv:
+        # the password arrives on stdin; nothing is echoed and nothing is stored
+        # in shell history if the caller pipes it from read -s or a secret store
+        u = "spatial"
+        if "--user" in sys.argv:
+            u = sys.argv[sys.argv.index("--user") + 1]
+        pw = sys.stdin.readline().rstrip("\n")
+        if len(pw) < 8:
+            raise SystemExit("too short — use at least 8 characters")
+        print(f"user {u!r}: written to {save_password(u, pw)} (mode 0600)")
+    elif "--set" in sys.argv:
         u = input("username: ").strip() or "spatial"
         p1 = getpass.getpass("password: ")
         if len(p1) < 8:
