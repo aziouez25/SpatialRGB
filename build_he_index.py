@@ -44,7 +44,6 @@ import time
 from PIL import Image
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, "/home/abb2013/Documents/Spatial")
 
 import he_image as H                                            # noqa: E402
 import spatial_rgb_data as D                                    # noqa: E402

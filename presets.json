@@ -1,0 +1,105 @@
+{
+ "source": "celltype_marker_maps.PANELS",
+ "panels": {
+  "POD  podocyte": [
+   "NPHS1",
+   "NPHS2",
+   "PODXL",
+   "PTPRO",
+   "WT1",
+   "SYNPO"
+  ],
+  "PT  proximal tubule": [
+   "LRP2",
+   "CUBN",
+   "ALDOB",
+   "MIOX",
+   "SLC34A1",
+   "GPX3",
+   "PCK1",
+   "HPD"
+  ],
+  "TAL  thick asc. limb": [
+   "UMOD",
+   "SLC12A1",
+   "CASR",
+   "KCNJ1",
+   "CLDN16"
+  ],
+  "DCT  distal conv.": [
+   "SLC12A3",
+   "TRPM6",
+   "PVALB",
+   "CALB1"
+  ],
+  "CNT/PC  collecting": [
+   "AQP2",
+   "AQP3",
+   "SCNN1G",
+   "GATA3",
+   "SCNN1B"
+  ],
+  "IC  intercalated": [
+   "ATP6V1G3",
+   "ATP6V0D2",
+   "SLC4A1",
+   "SLC26A4",
+   "FOXI1",
+   "CLCNKB"
+  ],
+  "EC  endothelium": [
+   "PECAM1",
+   "EGFL7",
+   "CDH5",
+   "VWF",
+   "PLVAP",
+   "EMCN"
+  ],
+  "VSM/P  smooth m. / peri.": [
+   "ACTA2",
+   "TAGLN",
+   "MYH11",
+   "RGS5",
+   "NOTCH3",
+   "PDGFRB"
+  ],
+  "FIB  fibroblast / ECM": [
+   "COL1A1",
+   "COL1A2",
+   "COL3A1",
+   "DCN",
+   "LUM",
+   "FBLN1"
+  ],
+  "MONO/MAC  myeloid": [
+   "LYZ",
+   "CD68",
+   "C1QA",
+   "C1QB",
+   "TYROBP",
+   "AIF1",
+   "FCER1G"
+  ],
+  "T/NK  lymphoid": [
+   "CD3D",
+   "CD3E",
+   "CD2",
+   "IL32",
+   "CCL5",
+   "NKG7",
+   "GZMA"
+  ],
+  "IG  immunoglobulin": [
+   "IGKC",
+   "IGHG1"
+  ],
+  "PLASMA  plasma cell": [
+   "JCHAIN",
+   "MZB1"
+  ],
+  "B  B cell": [
+   "CD79A",
+   "MS4A1"
+  ]
+ }
+}

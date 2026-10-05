@@ -52,6 +52,7 @@
 
 import functools
 import io as _io
+import json
 import os
 import sys
 
@@ -64,13 +65,17 @@ from PIL import Image
 
 from shiny import App, reactive, render, ui
 
-BASE = "/home/abb2013/Documents/Spatial"
-sys.path.insert(0, BASE)
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
 
 import spatial_rgb_data as D                                   # noqa: E402
 import he_image as HE                                          # noqa: E402
-from celltype_marker_maps import PANELS as DECK_PANELS         # noqa: E402
+
+# The deck's marker panels, as a snapshot (presets.json) so this folder runs
+# without the rest of the project.  export_presets.py rewrites it from
+# celltype_marker_maps.PANELS; re-run that after a marker change.
+with open(os.path.join(HERE, "presets.json")) as _f:
+    DECK_PANELS = json.load(_f)["panels"]
 
 # The crop resolution has to match the panel it feeds, or the extra screen
 # pixels only magnify the ones we fetched.  HE_H is the card height; Shiny sizes

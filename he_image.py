@@ -63,7 +63,10 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None          # 302 Mpx trips Pillow's 89 Mpx bomb guard
 
-BASE = "/home/abb2013/Documents/Spatial"
+# Where the data lives (Processed/, L0_CellType/, HiRes_*).  $SPATIAL_BASE if set,
+# else the folder that contains SpatialRGB/ -- which is the project root here.
+BASE = os.environ.get(
+    "SPATIAL_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 INDEX_DIR = f"{BASE}/HiRes_Index"
 TILE = 512
 N_LEVELS = 5                           # /1 /2 /4 /8 /16

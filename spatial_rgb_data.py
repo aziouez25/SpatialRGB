@@ -46,7 +46,10 @@ import h5py
 import numpy as np
 import pyarrow.parquet as pq
 
-BASE = "/home/abb2013/Documents/Spatial"
+# Where the data lives (Processed/, L0_CellType/, HiRes_*).  $SPATIAL_BASE if set,
+# else the folder that contains SpatialRGB/ -- which is the project root here.
+BASE = os.environ.get(
+    "SPATIAL_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 RES = {"2 µm": "square_002um", "8 µm": "square_008um", "16 µm": "square_016um"}
 BIN_UM = {"square_002um": 2.0, "square_008um": 8.0, "square_016um": 16.0}
 

@@ -47,10 +47,12 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-BASE = "/home/abb2013/Documents/Spatial"
+# Where the data lives (Processed/, L0_CellType/, HiRes_*).  $SPATIAL_BASE if set,
+# else the folder that contains SpatialRGB/ -- which is the project root here.
+BASE = os.environ.get(
+    "SPATIAL_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.chdir(BASE)
-sys.path.insert(0, f"{BASE}/SpatialRGB")
-sys.path.insert(0, BASE)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import he_image as HE                                           # noqa: E402
 import spatial_rgb_data as D                                    # noqa: E402
