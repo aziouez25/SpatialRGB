@@ -737,4 +737,10 @@ def server(input, output, session):
         return ui.tags.div(*blocks)
 
 
-app = App(app_ui, server)
+# The app is wrapped so that the page, the WebSocket and the download endpoint
+# are all behind one password; see auth.py for why a login page inside the app
+# would only guard the first of the three.  protect() raises if no password is
+# configured, so there is no way to start this serving openly by accident.
+import auth as AUTH                                              # noqa: E402
+
+app = AUTH.protect(App(app_ui, server))
