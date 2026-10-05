@@ -50,6 +50,7 @@
 #   ../spatial-venv/bin/python -m shiny run --port 8765 SpatialRGB/app.py
 # ==============================================================================
 
+import functools
 import os
 import sys
 
@@ -66,7 +67,16 @@ sys.path.insert(0, BASE)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import spatial_rgb_data as D                                   # noqa: E402
+import he_image as HE                                          # noqa: E402
 from celltype_marker_maps import PANELS as DECK_PANELS         # noqa: E402
+
+HE_PX = 620                      # the panel's own height; no point cropping finer
+
+
+@functools.lru_cache(maxsize=8)
+def he_of(sample):
+    """One HEImage per array. Cheap to hold: it stores a manifest, not pixels."""
+    return HE.HEImage(sample)
 
 CHAN = [("r", "RED", "#FF4040"), ("g", "GREEN", "#3BD23B"), ("b", "BLUE", "#5B8CFF")]
 PRESETS = {k.split("  ")[0]: list(v) for k, v in DECK_PANELS.items()}
@@ -109,7 +119,9 @@ app_ui = ui.page_sidebar(
                     stroke="#ffffff"), height="620px")),
         ui.card(ui.card_header("Selection"),
                 ui.output_plot("zoom", height="620px")),
-        col_widths=[6, 6],
+        ui.card(ui.card_header("Same window — microscope H&E"),
+                ui.output_plot("he", height="620px")),
+        col_widths=[4, 4, 4],
     ),
     ui.card(ui.output_ui("stats")),
     title="Visium HD — expression gradients over the 8 µm RCTD map",
@@ -362,6 +374,56 @@ def server(input, output, session):
             _msg(ax, "drag a box on the left")
         else:
             draw(fig, ax, w, "selection")
+        return fig
+
+    # The H&E panel reads the SAME win_rv as the zoom panel, so the two cannot
+    # drift apart, and draws on the same extent so a micron is a micron in all
+    # three.  pxl_*_in_fullres index the H&E TIF itself, so the window needs no
+    # transform beyond / mpp -- see he_image.py's banner for the evidence.
+    @render.plot
+    def he():
+        fig, ax = plt.subplots(figsize=(6.6, 6.6))
+        fig.subplots_adjust(0.01, 0.01, 0.99, 0.90)
+        s = input.sample()
+        try:
+            him = he_of(s)
+        except Exception as e:                            # noqa: BLE001
+            return _msg(ax, f"H&E unavailable: {e}") or fig
+        if not him.path and not him.indexed:
+            return _msg(ax, f"no microscope H&E for {s}") or fig
+
+        w = window()
+        if w is None:                                     # before any zoom box
+            side = max(him.width, him.height) * him.mpp
+            x0 = y0 = 0.0
+            title = f"{s} — whole scan"
+        else:
+            x0, y0, side = w
+            title = "selection — H&E"
+        try:
+            img, info = him.crop(x0, y0, side, HE_PX)
+        except Exception as e:                            # noqa: BLE001
+            return _msg(ax, f"crop failed: {e}") or fig
+
+        ax.imshow(img, extent=[x0, x0 + side, y0 + side, y0],
+                  interpolation="nearest")
+        scalebar(ax, [x0, x0 + side, y0 + side, y0], col="#222")
+        src = {"index": f"index L{info['level']}", "tiff-strips": "TIF (exact)",
+               "tiff-full-decode": "TIF (full decode)",
+               "off-scan": "outside the scan"}.get(info["source"], info["source"])
+        sub = (f"{src} · {info['seconds']:.2f}s · "
+               f"{info['um_per_out_px']:.2f} µm per screen pixel")
+        if info["coverage"] < 0.999:
+            sub += f" · {100 * (1 - info['coverage']):.0f}% outside the scan (grey)"
+        # KTx_1 only: a block holding 24.9% of the sample's UMI sits where the
+        # H&E is blank slide -- tissue moved between the microscope and CytAssist
+        # exposures, so blank H&E under real counts is the DATA, not a bad crop.
+        if s == "KTx_1":
+            sub += "\nKTx_1: tissue moved between exposures — a block with 25% of "
+            sub += "the UMI has no H&E under it. Blank here is real, not misaligned."
+        ax.set_title(f"{title} · {side:,.0f} µm across\n{sub}",
+                     fontsize=9, loc="left")
+        ax.set_xticks([]); ax.set_yticks([])
         return fig
 
     @render.ui
