@@ -20,10 +20,23 @@ folder that contains `SpatialRGB/`):
     HiRes_Index/<sample>/            H&E tile pyramid (build_he_index.py)
     HiRes_Images/<sample>_fullres.TIF   full-resolution H&E, for the export
 
+## Toy sample
+
+`toy/` holds one small sample, `KTx_toy`, so the app runs straight after a
+clone: a 1024 µm block cut from one real array (KTx_18), with its counts at
+2 µm and 8 µm, its cell-type labels and the matching H&E, about 17 MB. When
+`SPATIAL_BASE` is not set and there is no `Processed/` folder beside the
+app, the app uses `toy/`. `toy/toy_source.json` records how it was cut, and
+`build_toy_sample.py` rebuilds it (that needs the full data).
+
+The full-resolution H&E export does not work on the toy sample: it has the
+tile index but not the original image.
+
 ## Install and run
 
     python -m venv venv && venv/bin/pip install -r requirements.txt
     venv/bin/python auth.py --set          # choose the login password, once
+    venv/bin/python -m shiny run --port 8765 app.py          # toy sample
     SPATIAL_BASE=/path/to/data venv/bin/python -m shiny run --port 8765 app.py
 
 The app refuses to start without a password. The password is sent with HTTP
@@ -40,6 +53,8 @@ basic auth, so use it only over HTTPS or through an SSH tunnel.
 | `he_crop_selftest.py` | checks the H&E crop lands on the right tissue |
 | `auth.py` | the login password |
 | `presets.json` | marker panels offered as presets |
+| `build_toy_sample.py` | cuts the toy sample; runs only with the full data |
+| `toy/` | the toy sample |
 | `export_presets.py` | rewrites `presets.json`; runs only inside the full project |
 
 ## Where changes are made

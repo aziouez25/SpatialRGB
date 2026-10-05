@@ -1,0 +1,34 @@
+{
+ "sample": "KTx_toy",
+ "width": 2584,
+ "height": 2584,
+ "tile": 512,
+ "levels": 5,
+ "level_size": [
+  [
+   2584,
+   2584
+  ],
+  [
+   1292,
+   1292
+  ],
+  [
+   646,
+   646
+  ],
+  [
+   323,
+   323
+  ],
+  [
+   161,
+   161
+  ]
+ ],
+ "quality": 90,
+ "mpp": 0.4101861730752084,
+ "n_tiles": 51,
+ "source": "crop of KTx_18",
+ "complete": true
+}

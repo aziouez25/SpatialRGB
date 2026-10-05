@@ -67,6 +67,10 @@ Image.MAX_IMAGE_PIXELS = None          # 302 Mpx trips Pillow's 89 Mpx bomb guar
 # else the folder that contains SpatialRGB/ -- which is the project root here.
 BASE = os.environ.get(
     "SPATIAL_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# A clone of the app-only repository has no data beside it: fall back to the
+# toy sample that ships in toy/ (build_toy_sample.py), so the app still starts.
+if "SPATIAL_BASE" not in os.environ and not os.path.isdir(f"{BASE}/Processed"):
+    BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "toy")
 INDEX_DIR = f"{BASE}/HiRes_Index"
 TILE = 512
 N_LEVELS = 5                           # /1 /2 /4 /8 /16

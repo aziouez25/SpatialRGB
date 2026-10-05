@@ -97,7 +97,10 @@ MODES = {"expr": "Expression gradients over cell types",
 
 app_ui = ui.page_sidebar(
     ui.sidebar(
-        ui.input_select("sample", "Array", choices=D.samples(), selected="KTx_18"),
+        ui.input_select("sample", "Array", choices=D.samples(),
+                        # KTx_18 where it exists; a toy-only install has one array
+                        selected=("KTx_18" if "KTx_18" in D.samples()
+                                  else D.samples()[0])),
         ui.input_select("res", "Bin size", choices=list(D.RES), selected="8 µm"),
         ui.input_radio_buttons("mode", "View", choices=MODES, selected="expr"),
         ui.hr(),
