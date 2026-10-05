@@ -70,7 +70,11 @@ import spatial_rgb_data as D                                   # noqa: E402
 import he_image as HE                                          # noqa: E402
 from celltype_marker_maps import PANELS as DECK_PANELS         # noqa: E402
 
-HE_PX = 620                      # the panel's own height; no point cropping finer
+# The crop resolution has to match the panel it feeds, or the extra screen
+# pixels only magnify the ones we fetched.  HE_H is the card height; Shiny sizes
+# the figure from the client box, so this is what the viewer actually gets.
+HE_H = "900px"
+HE_PX = 1200                     # crop pixels requested; >= the displayed square
 
 
 @functools.lru_cache(maxsize=8)
@@ -119,10 +123,14 @@ app_ui = ui.page_sidebar(
                     stroke="#ffffff"), height="620px")),
         ui.card(ui.card_header("Selection"),
                 ui.output_plot("zoom", height="620px")),
-        ui.card(ui.card_header("Same window — microscope H&E"),
-                ui.output_plot("he", height="620px")),
-        col_widths=[4, 4, 4],
+        col_widths=[6, 6],
     ),
+    # The H&E gets a row of its own (author, 2026-10-05: "the H&E image is too
+    # small. I need to have a cell resolution").  Sharing the row three ways
+    # capped it at a third of the width; on its own row the square is limited by
+    # HE_H instead, which is 1.45x more screen pixels for the same field.
+    ui.card(ui.card_header("Same window — microscope H&E"),
+            ui.output_plot("he", height=HE_H)),
     ui.card(ui.output_ui("stats")),
     title="Visium HD — expression gradients over the 8 µm RCTD map",
     fillable=False,
